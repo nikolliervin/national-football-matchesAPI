@@ -86,5 +86,25 @@ namespace national_football_matchesAPI.Controllers
 				return Ok(result);
 			}
 		}
+
+		[HttpGet("ByCityCountryCompedition")]
+		public IActionResult getMatchesByCityCountryCompedition(string city, string country, string compedition)
+		{
+			var result = _db.results
+				.Where(c => c.city == city
+				&& c.country == country
+				&& c.tournament == compedition)
+				.ToList();
+
+			if (result.Count() == 0)
+			{
+				return StatusCode(404, "No matches found");
+
+			}
+			else
+			{
+				return Ok(result);
+			}
+		}
 	}
 }
