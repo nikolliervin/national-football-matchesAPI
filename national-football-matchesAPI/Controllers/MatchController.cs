@@ -50,5 +50,23 @@ namespace national_football_matchesAPI.Controllers
 				return Ok(result);
 			}
 		}
+
+		[HttpGet("ByCompetition")]
+		public IActionResult getMatchesByCompetition(string competition, string? homeTeam, string? awayTeam)
+		{
+			var result = _db.results
+				.Where(c => c.tournament == competition && c.home_team == homeTeam && c.away_team == awayTeam)
+				.ToList();
+
+			if (result.Count() == 0)
+			{
+				return StatusCode(404, "No matches found");
+
+			}
+			else
+			{
+				return Ok(result);
+			}
+		}
 	}
 }
