@@ -68,5 +68,23 @@ namespace national_football_matchesAPI.Controllers
 				return Ok(result);
 			}
 		}
+
+		[HttpGet("ByCityCountry")]
+		public IActionResult getMatchesByCityCountry(string city, string country)
+		{
+			var result = _db.results
+				.Where(c => c.city == city && c.country == country)
+				.ToList();
+
+			if (result.Count() == 0)
+			{
+				return StatusCode(404, "No matches found");
+
+			}
+			else
+			{
+				return Ok(result);
+			}
+		}
 	}
 }
