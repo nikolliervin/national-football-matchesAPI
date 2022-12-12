@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.EntityFrameworkCore;
+using national_football_matchesAPI.Models;
 
 namespace national_football_matchesAPI.Data
 {
@@ -11,5 +12,6 @@ namespace national_football_matchesAPI.Data
 
 		}
 
+		public DbSet<Match> matches { get; set; }
 	}
 }

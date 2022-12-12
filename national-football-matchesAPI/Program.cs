@@ -1,4 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using national_football_matchesAPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+builder.Services.AddDbContext<APIContext>(options =>
+			options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 
