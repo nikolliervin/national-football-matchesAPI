@@ -14,9 +14,9 @@ namespace national_football_matchesAPI.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult getMatch(string homeTeam, string awayTeam)
+		public IActionResult getMatchByteams(string homeTeam, string awayTeam)
 		{
-			var database = _db.Database.CanConnect();
+
 
 			var result = _db.results
 				.Where(n => n.home_team == homeTeam && n.away_team == awayTeam)
@@ -31,13 +31,6 @@ namespace national_football_matchesAPI.Controllers
 			{
 				return Ok(result);
 			}
-
-
-
-
-
-
-
 
 		}
 	}
