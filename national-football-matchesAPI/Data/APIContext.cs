@@ -12,6 +12,7 @@ namespace national_football_matchesAPI.Data
 
 		}
 
-		public DbSet<Match> matches { get; set; }
+
+		public DbSet<Match> results { get; set; }
 	}
 }
