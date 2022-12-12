@@ -33,5 +33,22 @@ namespace national_football_matchesAPI.Controllers
 			}
 
 		}
+		[HttpGet("ByDate")]
+		public IActionResult getMatchesByDate(string date)
+		{
+			var result = _db.results
+				.Where(d => d.date == date)
+				.ToList();
+
+			if (result.Count() == 0)
+			{
+				return StatusCode(404, "No matches found");
+
+			}
+			else
+			{
+				return Ok(result);
+			}
+		}
 	}
 }
