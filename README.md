@@ -4,7 +4,7 @@ The api is built under this dataset: https://www.kaggle.com/datasets/martj42/int
 
 ## Key Features
 Get match results by
-- [inputing home team and away team]
+- inputing home team and away team
 - [date when matches were played (yyyy-mm-dd) ]
 - [competition where matches were played]
 - [city and country where matches were played]
