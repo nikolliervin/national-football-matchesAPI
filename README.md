@@ -51,6 +51,21 @@ API Response:
 <br>
 <br>
 
+4. by city and country:
+```bash
+https://localhost:7098/api/Match/ByCityCountry?city=Mitrovica&country=Kosovo
+```
+API Response:
+<br>
+<br>
+<img width="242" alt="image" src="https://user-images.githubusercontent.com/45341025/207341305-296dc8db-e678-421d-9f88-60ea404dd0ec.png">
+
+
+
+<br>
+<br>
+<br>
+
 
 
 
