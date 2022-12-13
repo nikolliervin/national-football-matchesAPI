@@ -24,7 +24,7 @@ API Response:
 <br>
 <br>
 
-1. by date:
+2. by date:
 ```bash
 https://localhost:7098/api/Match/ByDate?date=2010-07-11
 ```
@@ -36,6 +36,21 @@ API Response:
 <br>
 <br>
 <br>
+
+3. by competition and date:
+```bash
+https://localhost:7098/api/Match/ByCompetition?competition=Fifa%20World%20Cup&homeTeam=France&awayTeam=Croatia
+```
+API Response:
+<br>
+<br>
+<img width="280" alt="image" src="https://user-images.githubusercontent.com/45341025/207338502-d1573aea-c0c2-4013-a3c4-ce90125319f6.png">
+
+
+<br>
+<br>
+<br>
+
 
 
 
