@@ -5,7 +5,7 @@ The api is built under this dataset: https://www.kaggle.com/datasets/martj42/int
 ## Key Features
 Get match results by
 - [inputing home team and away team]
-- [date when matches were played]
+- [date when matches were played (yyyy-mm-dd) ]
 - [competition where matches were played]
 - [city and country where matches were played]
 - [city, country and competition where matches were played]
@@ -59,6 +59,22 @@ API Response:
 <br>
 <br>
 <img width="242" alt="image" src="https://user-images.githubusercontent.com/45341025/207341305-296dc8db-e678-421d-9f88-60ea404dd0ec.png">
+
+
+
+<br>
+<br>
+<br>
+
+5. by city, country and comepetition:
+```bash
+https://localhost:7098/api/Match/ByCityCountryCompedition?city=Doha&country=Qatar&compedition=Fifa%20World%20Cup
+```
+API Response:
+<br>
+<br>
+<img width="303" alt="image" src="https://user-images.githubusercontent.com/45341025/207343257-8b26aea1-032c-47ad-8a37-3be081b90c91.png">
+
 
 
 
