@@ -11,16 +11,15 @@ Get match results by
 - [city, country and competition where matches were played]
 
 ## Examples: 
-```bash
 1. by home team and away team:
-
+```bash
 https://localhost:7098/api/Match?homeTeam=Argentina&awayTeam=Albania
-
+```
 API Response:
 <img width="257" alt="image" src="https://user-images.githubusercontent.com/45341025/207333657-e9063554-35b2-4d3d-8ea9-d5c739b6b852.png">
 
 
 
-```
+
 
 
